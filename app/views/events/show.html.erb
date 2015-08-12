@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Day:</strong>
+  <%= @event.day %>
+</p>
+
+<p>
+  <strong>Note:</strong>
+  <%= @event.note %>
+</p>
+
+<p>
+  <strong>Points:</strong>
+  <%= @event.points %>
+</p>
+
+<p>
+  <strong>Max points:</strong>
+  <%= @event.max_points %>
+</p>
+
+<p>
+  <strong>Percent:</strong>
+  <%= @event.percent %>%
+</p>
+
+<p>
+  <strong>Mark:</strong>
+  <%= @event.mark %>
+</p>
+
+<p>
+  <strong>Subject:</strong>
+  <%= @subject.name %>
+</p>
+
+<%= link_to 'Edit', edit_subject_event_path(@subject,@event) %> |
+<%= link_to 'Back', subject_events_path(@subject) %>

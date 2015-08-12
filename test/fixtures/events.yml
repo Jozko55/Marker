@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  day: 2015-08-11
+  note: MyText
+  points: 1
+  max_points: 1
+  mark: 1
+  Subject: 
+
+two:
+  day: 2015-08-11
+  note: MyText
+  points: 1
+  max_points: 1
+  mark: 1
+  Subject: 

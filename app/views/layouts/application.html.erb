@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Marker</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<h1>Marker</h1>
+<h4>Spolu nahradime Edupage!</h4>
+<table>
+  <tr>
+    <% Subject.all.each do |subject| %>
+    <th><%= link_to subject.name, subject_path(subject) %></th>
+    <% end %>
+    <th><%= link_to 'Dnes', today_path %></th>
+  </tr>
+
+</table>
+
+<%= yield %>
+
+</body>
+</html>
